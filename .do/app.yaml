@@ -1,0 +1,17 @@
+name: vasudha-web
+region: blr  # Bangalore — closest DO region to India
+
+static_sites:
+  - name: vasudha-web
+    github:
+      repo: vasudha/vasudha-web
+      branch: main
+      deploy_on_push: true
+    source_dir: /
+    output_dir: /
+    index_document: index.html
+    error_document: index.html
+
+domains:
+  - domain: vasudha.build
+    type: PRIMARY
