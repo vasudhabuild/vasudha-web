@@ -335,11 +335,43 @@
     <p class="connect-body">
       We are inviting architects, urban designers, developers, academics, and built environment practitioners to engage with the VASUDHA framework before formal certification opens. If you are working on a project that belongs to its land — or if you want to help shape what rigorous regenerative certification looks like in the Global South — we want to hear from you.
     </p>
-    <div class="connect-actions">
-      <a href="mailto:vasudha.build@gmail.com" class="btn-primary">vasudha.build@gmail.com</a>
-    </div>
-    <div class="connect-note">
-      We respond to every serious enquiry. Please include a brief description of your project or interest area.
+
+    <div class="contact-form-wrap">
+      <form action="https://formspree.io/f/xkoevewk" method="POST" class="contact-form">
+        <input type="hidden" name="_subject" value="VASUDHA — New Enquiry from vasudha.build">
+        <input type="hidden" name="_next" value="https://vasudha.build#connect">
+
+        <div class="form-row form-row-2">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="organisation">Organisation / Practice</label>
+          <input type="text" id="organisation" name="organisation" placeholder="Firm, institution, or independent">
+        </div>
+
+        <div class="form-group">
+          <label for="project">Project Description</label>
+          <input type="text" id="project" name="project" placeholder="Brief description of your project or work">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message / Interest Area</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us how you'd like to engage with VASUDHA — certification, research, collaboration, or feedback on the framework."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Enquiry</button>
+      </form>
+      <div class="connect-note">
+        Or write directly to <a href="mailto:vasudha.build@gmail.com">vasudha.build@gmail.com</a> — we respond to every serious enquiry.
+      </div>
     </div>
   </div>
 </section>

@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-logo {
-  height: 44px;
+  height: 64px;
   width: auto;
   display: block;
 }
@@ -806,4 +806,101 @@ footer {
   .connect { padding: 4rem 1.5rem; }
   .what { padding: 4rem 1.5rem; }
   .sixtags { padding: 4rem 1.5rem; }
+}
+
+/* ── CONTACT FORM ── */
+.contact-form-wrap {
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(232,213,183,0.6);
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(255,255,255,0.06);
+  border: 0.5px solid rgba(232,213,183,0.2);
+  color: var(--ash);
+  padding: 0.75rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(242,237,228,0.25);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--ochre);
+  background: rgba(255,255,255,0.09);
+}
+
+.btn-submit {
+  background: var(--ochre);
+  color: var(--ash);
+  border: none;
+  padding: 0.85rem 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+
+.btn-submit:hover {
+  background: var(--ochre-light);
+  color: var(--teak);
+}
+
+.connect-note {
+  font-size: 0.78rem;
+  color: rgba(242,237,228,0.35);
+  font-style: italic;
+}
+
+.connect-note a {
+  color: var(--ochre-light);
+  text-decoration: none;
+}
+
+.connect-note a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .form-row-2 { grid-template-columns: 1fr; }
 }
