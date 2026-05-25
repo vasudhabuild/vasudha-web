@@ -584,3 +584,226 @@ footer {
     padding: 2rem 1.5rem;
   }
 }
+
+/* ── WHAT IS VASUDHA ── */
+.what {
+  background: var(--teak);
+  padding: 6rem 3rem;
+}
+
+.what-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.what .section-label { color: var(--ochre-light); }
+.what .section-label::before { background: var(--ochre-light); }
+
+.acronym-block {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  margin: 2.5rem 0 3rem;
+  align-items: start;
+}
+
+.acronym-sanskrit {
+  border-left: 2px solid var(--ochre);
+  padding-left: 1.5rem;
+}
+
+.sanskrit-word {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3rem;
+  color: var(--ochre-light);
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.sanskrit-meaning {
+  font-size: 0.8rem;
+  color: rgba(242,237,228,0.5);
+  letter-spacing: 0.05em;
+  font-style: italic;
+}
+
+.acronym-expansion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.acronym-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.acronym-letter {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.4rem;
+  color: var(--ochre);
+  width: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+.acronym-word {
+  font-size: 1rem;
+  color: var(--ochre-light);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.what-body {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: rgba(242,237,228,0.7);
+  font-weight: 300;
+  max-width: 72ch;
+}
+
+/* ── SIX TAGS ── */
+.sixtags {
+  background: var(--ochre-pale);
+  padding: 6rem 3rem;
+}
+
+.sixtags-headline {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+  line-height: 1.25;
+  font-weight: 400;
+  color: var(--teak);
+  max-width: 30ch;
+  margin-bottom: 3rem;
+}
+
+.sixtags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 0.5px solid var(--border);
+}
+
+.sixtag-card {
+  background: var(--ochre-pale);
+  padding: 2rem 1.5rem;
+  transition: background 0.2s;
+}
+
+.sixtag-card:hover { background: var(--ochre-light); }
+
+.sixtag-num {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--ochre);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.sixtag-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.1rem;
+  color: var(--teak);
+  display: block;
+  font-style: italic;
+  margin-bottom: 0.2rem;
+}
+
+.sixtag-sub {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.sixtag-desc {
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: var(--text-body);
+  font-weight: 300;
+}
+
+/* ── DOMAIN DESCRIPTIONS ── */
+.domain-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0.3rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* ── CONNECT ── */
+.connect {
+  background: var(--indigo);
+  padding: 6rem 3rem;
+}
+
+.connect-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.connect .section-label {
+  justify-content: center;
+  color: rgba(232,213,183,0.7);
+}
+
+.connect .section-label::before { background: rgba(232,213,183,0.7); }
+
+.connect-headline {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  line-height: 1.3;
+  font-weight: 400;
+  color: var(--ochre-light);
+  margin-bottom: 1.5rem;
+}
+
+.connect-body {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: rgba(242,237,228,0.65);
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.connect-actions {
+  margin-bottom: 1.5rem;
+}
+
+.connect-actions .btn-primary {
+  background: var(--ochre);
+  color: var(--ash);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: none;
+}
+
+.connect-actions .btn-primary:hover {
+  background: var(--ochre-light);
+  color: var(--teak);
+}
+
+.connect-note {
+  font-size: 0.78rem;
+  color: rgba(242,237,228,0.35);
+  font-style: italic;
+}
+
+/* ── RESPONSIVE ADDITIONS ── */
+@media (max-width: 900px) {
+  .acronym-block { grid-template-columns: 1fr; gap: 2rem; }
+  .sixtags-grid { grid-template-columns: 1fr; }
+  .connect { padding: 4rem 1.5rem; }
+  .what { padding: 4rem 1.5rem; }
+  .sixtags { padding: 4rem 1.5rem; }
+}
